@@ -1,0 +1,33 @@
+{
+  "name": "smart-virtual-assistant",
+  "version": "1.0.0",
+  "description": "Smart Virtual Assistant Reach Out System - AI-powered task collection and support request tool built with MERN",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:start\" \"npm run frontend:dev\"",
+    "start": "concurrently \"npm run backend:start\" \"npm run frontend:start\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && node server.js",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:start": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "virtual-assistant",
+    "ai",
+    "chatbot",
+    "mern",
+    "react",
+    "express",
+    "mongodb",
+    "openai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
